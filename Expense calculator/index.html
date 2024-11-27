@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Expense Calculator</h1>
+    <form id="expense-form">
+        <label for="expense-name">Expense Name:</label>
+        <input type="text" id="expense-name" required>
+        <label for="expense-amount">Expense Amount:</label>
+        <input type="number" id="expense-amount" required>
+        <button id="add-expense-btn">Add Expense</button>
+    </form>
+    <table id="expense-table">
+        <thead>
+            <tr>
+                <th>Expense Name</th>
+                <th>Expense Amount</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="expense-table-body">
+        </tbody>
+    </table>
+    <p id="total-expense"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
